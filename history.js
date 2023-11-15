@@ -298,9 +298,9 @@ const filterAndSaveData = (inputString, timeframe, symbolName, fullName, ws) => 
             if (Object.keys(element.p[1]).length != 0) {
                 element.p[1].sds_1.s.forEach(candle => {
                     var timestampSeconds = candle.v[0]; // Unix timestamp in seconds
-                    var oldDate = moment.unix(timestampSeconds).format('YYYY-MM-DD HH:mm:ss');
+                    var formattedDateTime = moment.unix(timestampSeconds).utc().format('YYYY-MM-DD HH:mm:ss');
 
-                    var formattedDateTime = moment(oldDate, 'YYYY-MM-DD HH:mm:ss').subtract(3, 'hours').subtract(30, 'minutes').format('YYYY-MM-DD HH:mm:ss'); const found = usedOpenTimes.find(usedOpenTime => usedOpenTime == formattedDateTime);
+                    const found = usedOpenTimes.find(usedOpenTime => usedOpenTime == formattedDateTime);
                     usedOpenTimes.push(formattedDateTime)
 
                     if (found == undefined) {
@@ -400,7 +400,7 @@ async function startStreams(symbols) {
 
     for (const symbol in symbols) {
         var pairArray = symbol.split(":");
-        const allCandles = { "1": [], "5": [], "15": [], "30": [], "60": [], "240": [], "1D": [], "1w": [], "1M": [] };
+        const allCandles = { "1M": [], "1w": [], "1D": [], "240": [], "60": [], "30": [], "15": [], "5": [], "1": [] };
 
         await new Promise(async (resolve) => {
             var counter = 1;
