@@ -4,7 +4,7 @@ const db = require('./db'); // Adjust the path as needed
 const Redis = require('ioredis');
 
 const redis = new Redis({
-    host: '95.217.151.68',
+    host: '87.107.190.181',
     port: '6379',
     password: 'D@n!@l12098',
     enableCompression: true,
@@ -122,6 +122,7 @@ const symbols = {
     // "FOREXCOM:DJI": { resolver: 141, shouldActive: true, active: true },
     // "FXOPEN:NDQM": { resolver: 140, shouldActive: true, active: true },
     // // //22
+    // "FX:XAUUSD": { resolver: 138, shouldActive: true, active: true },
     // "TVC:US20Y": { resolver: 138, shouldActive: true, active: true },
     // "AMEX:GDX": { resolver: 137, shouldActive: true, active: true },
     // "AMEX:GDXJ": { resolver: 138, shouldActive: true, active: true },
@@ -144,7 +145,6 @@ const symbols = {
     // "COMEX:HRC1!": { resolver: 140, shouldActive: true, active: true },
     // "COMEX:HG1!": { resolver: 139, shouldActive: true, active: true },
     // "MCX:ZINC1!": { resolver: 139, shouldActive: true, active: true },
-    // "FX:FXAUUSD": { resolver: 138, shouldActive: true, active: true },
     // "FX:USOILSPOT": { resolver: 141, shouldActive: true, active: true },
     // "FX:UKOILSPOT": { resolver: 141, shouldActive: true, active: true },
 
@@ -184,7 +184,7 @@ const symbols = {
     "OANDA:CADCHF": { resolver: 141, shouldActive: true, active: false },
     "OANDA:CADJPY": { resolver: 141, shouldActive: true, active: false },
 
-    //35
+    //35 87.107.190.181
 }
 
 
@@ -295,7 +295,9 @@ const filterAndSaveData = (inputString, timeframe, symbolName, fullName, ws) => 
         }
     });
 
-
+    // if (symbolName == "XAUUSD") {
+    //     symbolName = "FXAUUSD"
+    // }
 
     if (combinedArray.length != 0) {
         combinedArray.forEach(element => {
