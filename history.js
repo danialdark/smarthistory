@@ -122,6 +122,9 @@ const symbols = {
     // "FOREXCOM:DJI": { resolver: 141, shouldActive: true, active: true },
     // "FXOPEN:NDQM": { resolver: 140, shouldActive: true, active: true },
     // // //22
+    "COMEX:HRC1!": { resolver: 140, shouldActive: true, active: true },
+    "COMEX:HG1!": { resolver: 139, shouldActive: true, active: true },
+    "MCX:ZINC1!": { resolver: 139, shouldActive: true, active: true },
     "FX:XAUUSD": { resolver: 138, shouldActive: true, active: true },
     "TVC:US20Y": { resolver: 138, shouldActive: true, active: true },
     "AMEX:GDX": { resolver: 137, shouldActive: true, active: true },
@@ -142,9 +145,6 @@ const symbols = {
     "TVC:ZXY": { resolver: 136, shouldActive: true, active: true },
     "CAPITALCOM:HK50": { resolver: 144, shouldActive: true, active: true },
     "CAPITALCOM:NATURALGAS": { resolver: 150, shouldActive: true, active: true },
-    "COMEX:HRC1!": { resolver: 140, shouldActive: true, active: true },
-    "COMEX:HG1!": { resolver: 139, shouldActive: true, active: true },
-    "MCX:ZINC1!": { resolver: 139, shouldActive: true, active: true },
     "FX:USOILSPOT": { resolver: 141, shouldActive: true, active: true },
     "FX:UKOILSPOT": { resolver: 141, shouldActive: true, active: true },
 
