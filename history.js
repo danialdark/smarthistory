@@ -210,7 +210,7 @@ function formatNumberWithTwoDecimals(number) {
 
 
 async function saveLastTwoCandleToRedis(lastTwoCandleArray, timeframe, symbolName) {
-    await pipeline.set(`${timeframe}-${symbolName.toLowerCase()}`, JSON.stringify(lastTwoCandleArray)).expire(`${timeframe}-${symbolName.toLowerCase()}`, 2).exec();
+    await pipeline.set(`${timeframe}-${symbolName.toLowerCase()}`, JSON.stringify(lastTwoCandleArray)).expire(`${timeframe}-${symbolName.toLowerCase()}`, 120).exec();
 
 }
 
