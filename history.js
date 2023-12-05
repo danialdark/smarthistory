@@ -427,9 +427,9 @@ async function startStreams(symbols) {
             resolve();
         });
 
-        setTimeout(() => {
+        setTimeout(async () => {
             // sending activation data
-            axios.get(`https://historyfx2.chtx.ir/active/${symbol.toUpperCase()}`)
+            await axios.get(`https://historyfx2.chtx.ir/active/${symbol.toUpperCase()}`)
                 .then(response => {
                     // Handle the response data here
                     console.log(`${symbol} live activated`);
