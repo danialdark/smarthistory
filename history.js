@@ -99,28 +99,28 @@ const symbols = {
     // "NYMEX:PL1!": { resolver: 139, shouldActive: true, active: true },
     // "NYMEX:MBE1!": { resolver: 140, shouldActive: true, active: true },
     // //23
-    "XETR:DAX": { resolver: 137, shouldActive: true, active: true },
-    "CRYPTOCAP:BTC.D": { resolver: 144, shouldActive: true, active: true, times: 0 },
-    "CRYPTOCAP:ETH.D": { resolver: 144, shouldActive: true, active: true, times: 0 },
-    "CRYPTOCAP:USDT.D": { resolver: 145, shouldActive: true, active: true, times: 0 },
-    "CRYPTOCAP:OTHERS.D": { resolver: 147, shouldActive: true, active: true, times: 0 },
-    "CRYPTOCAP:Total": { resolver: 144, shouldActive: true, active: true, times: 0 },
-    "CRYPTOCAP:Total2": { resolver: 145, shouldActive: true, active: true, times: 0 },
-    "CRYPTOCAP:Total3": { resolver: 145, shouldActive: true, active: true, times: 0 },
-    "CRYPTOCAP:TOTALDEFI": { resolver: 148, shouldActive: true, active: true, times: 0 },//0 is every day
-    "NASDAQ:FSTOK300": { resolver: 144, shouldActive: true, active: true },
-    "NASDAQ:FSTOK10": { resolver: 143, shouldActive: true, active: true },
-    "NASDAQ:FSTOK40": { resolver: 143, shouldActive: true, active: true },
-    "NASDAQ:FSTOK250": { resolver: 144, shouldActive: true, active: true },
-    "NASDAQ:FSTOKAGG": { resolver: 144, shouldActive: true, active: true },
-    "TVC:US05Y": { resolver: 138, shouldActive: true, active: true },
-    "TVC:US10Y": { resolver: 138, shouldActive: true, active: true },
-    "CME_MINI:NQ1!": { resolver: 142, shouldActive: true, active: true },
-    "CME_MINI:ES1!": { resolver: 142, shouldActive: true, active: true },
-    "CBOT_MINI:YM1!": { resolver: 143, shouldActive: true, active: true },
-    "VANTAGE:DJ30FT": { resolver: 143, shouldActive: true, active: true },
-    "FOREXCOM:DJI": { resolver: 141, shouldActive: true, active: true },
-    "FXOPEN:NDQM": { resolver: 140, shouldActive: true, active: true },
+    // "XETR:DAX": { resolver: 137, shouldActive: true, active: true },
+    // "CRYPTOCAP:BTC.D": { resolver: 144, shouldActive: true, active: true, times: 0 },
+    // "CRYPTOCAP:ETH.D": { resolver: 144, shouldActive: true, active: true, times: 0 },
+    // "CRYPTOCAP:USDT.D": { resolver: 145, shouldActive: true, active: true, times: 0 },
+    // "CRYPTOCAP:OTHERS.D": { resolver: 147, shouldActive: true, active: true, times: 0 },
+    // "CRYPTOCAP:Total": { resolver: 144, shouldActive: true, active: true, times: 0 },
+    // "CRYPTOCAP:Total2": { resolver: 145, shouldActive: true, active: true, times: 0 },
+    // "CRYPTOCAP:Total3": { resolver: 145, shouldActive: true, active: true, times: 0 },
+    // "CRYPTOCAP:TOTALDEFI": { resolver: 148, shouldActive: true, active: true, times: 0 },//0 is every day
+    // "NASDAQ:FSTOK300": { resolver: 144, shouldActive: true, active: true },
+    // "NASDAQ:FSTOK10": { resolver: 143, shouldActive: true, active: true },
+    // "NASDAQ:FSTOK40": { resolver: 143, shouldActive: true, active: true },
+    // "NASDAQ:FSTOK250": { resolver: 144, shouldActive: true, active: true },
+    // "NASDAQ:FSTOKAGG": { resolver: 144, shouldActive: true, active: true },
+    // "TVC:US05Y": { resolver: 138, shouldActive: true, active: true },
+    // "TVC:US10Y": { resolver: 138, shouldActive: true, active: true },
+    // "CME_MINI:NQ1!": { resolver: 142, shouldActive: true, active: true },
+    // "CME_MINI:ES1!": { resolver: 142, shouldActive: true, active: true },
+    // "CBOT_MINI:YM1!": { resolver: 143, shouldActive: true, active: true },
+    // "VANTAGE:DJ30FT": { resolver: 143, shouldActive: true, active: true },
+    // "FOREXCOM:DJI": { resolver: 141, shouldActive: true, active: true },
+    // "FXOPEN:NDQM": { resolver: 140, shouldActive: true, active: true },
     // // // //22
     // "COMEX:HRC1!": { resolver: 140, shouldActive: true, active: true },
     // "COMEX:HG1!": { resolver: 139, shouldActive: true, active: true },
@@ -148,41 +148,41 @@ const symbols = {
     // "FX:USOILSPOT": { resolver: 141, shouldActive: true, active: true },
     // "FX:UKOILSPOT": { resolver: 141, shouldActive: true, active: true },
 
-    // "OANDA:XAUUSD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:USDTRY": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:XPTUSD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:EURCNH": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:USDCNH": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:SPX500USD": { resolver: 144, shouldActive: true, active: true },
-    // "OANDA:EURUSD": { resolver: 141, shouldActive: true, active: true },
-    // "OANDA:GBPUSD": { resolver: 141, shouldActive: true, active: true },
-    // "OANDA:USDCHF": { resolver: 141, shouldActive: true, active: true },
-    // "OANDA:USDCAD": { resolver: 141, shouldActive: true, active: true },
-    // "OANDA:USDJPY": { resolver: 141, shouldActive: true, active: true },
-    // "OANDA:AUDUSD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:NZDUSD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:EURJPY": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:EURCAD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:EURNZD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:EURAUD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:EURCHF": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:GBPJPY": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:GBPNZD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:GBPAUD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:GBPCAD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:GBPCHF": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:AUDCAD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:AUDNZD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:AUDJPY": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:AUDCHF": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:CHFJPY": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:XAGUSD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:NZDCAD": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:NZDCHF": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:NZDJPY": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:EURGBP": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:CADCHF": { resolver: 141, shouldActive: true, active: false },
-    // "OANDA:CADJPY": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:XAUUSD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:USDTRY": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:XPTUSD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:EURCNH": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:USDCNH": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:SPX500USD": { resolver: 144, shouldActive: true, active: true },
+    "OANDA:EURUSD": { resolver: 141, shouldActive: true, active: true },
+    "OANDA:GBPUSD": { resolver: 141, shouldActive: true, active: true },
+    "OANDA:USDCHF": { resolver: 141, shouldActive: true, active: true },
+    "OANDA:USDCAD": { resolver: 141, shouldActive: true, active: true },
+    "OANDA:USDJPY": { resolver: 141, shouldActive: true, active: true },
+    "OANDA:AUDUSD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:NZDUSD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:EURJPY": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:EURCAD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:EURNZD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:EURAUD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:EURCHF": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:GBPJPY": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:GBPNZD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:GBPAUD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:GBPCAD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:GBPCHF": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:AUDCAD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:AUDNZD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:AUDJPY": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:AUDCHF": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:CHFJPY": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:XAGUSD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:NZDCAD": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:NZDCHF": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:NZDJPY": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:EURGBP": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:CADCHF": { resolver: 141, shouldActive: true, active: false },
+    "OANDA:CADJPY": { resolver: 141, shouldActive: true, active: false },
 
     //35 87.107.190.181
 }
@@ -295,9 +295,9 @@ const filterAndSaveData = (inputString, timeframe, symbolName, fullName, ws) => 
         }
     });
 
-    if (symbolName == "XAUUSD") {
-        symbolName = "FXAUUSD"
-    }
+    // if (symbolName == "XAUUSD") {
+    //     symbolName = "FXAUUSD"
+    // }
 
     if (combinedArray.length != 0) {
         combinedArray.forEach(element => {
@@ -429,7 +429,7 @@ async function startStreams(symbols) {
 
         setTimeout(async () => {
             // sending activation data
-            await axios.get(`https://historyfx2.chtx.ir/active/${symbol.toUpperCase()}`)
+            await axios.get(`https://historyfx.chtx.ir/active/${symbol.toUpperCase()}`)
                 .then(response => {
                     // Handle the response data here
                     console.log(`${symbol} live activated`);
